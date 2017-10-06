@@ -10,9 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>MLB Teams</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'HW4style.css'/>
     </head>
     <body>
-        <h1>Major League Baseball Teams Database</h1>
+        <h1>Major League Baseball Teams Database</h1><hr><br><br>
         
         <a href="read">View All Teams</a>
     </body>

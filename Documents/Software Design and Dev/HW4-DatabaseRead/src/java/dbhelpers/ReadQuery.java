@@ -57,11 +57,22 @@ public class ReadQuery {
         }
     }
     
-    public String getHTMLtable(){
+    public String getHTMLTable(){
        
         String table = "";
-        table += "<table border=1>";
+        table += "<table>";
         
+        table += "<tr>";
+            table += "<th>   </th>";
+            table += "<th>Team Name</th>";
+            table += "<th>Conference</th>";
+            table += "<th>Division</th>";
+            table += "<th>City</th>";
+            table += "<th>State</th>";
+            table += "<th>Stadium Name</th>";
+            table += "<th>Year Built</th>";
+        table += "</tr>";
+            
         try {
             while(this.results.next()){
                 
@@ -75,37 +86,38 @@ public class ReadQuery {
                 teams.setStadiumName(this.results.getString("stadiumName"));
                 teams.setYrBuilt(this.results.getInt("yrBuilt"));
                 
+                
                 table += "<tr>";
                 table += "<td>";
-                table += teams.getTeamID();
+                    table += teams.getTeamID();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getTeamName();
+                    table += teams.getTeamName();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getConference();
+                    table += teams.getConference();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getDivision();
+                    table += teams.getDivision();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getCity();
+                    table += teams.getCity();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getState();
+                    table += teams.getState();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getStadiumName();
+                    table += teams.getStadiumName();
                 table += "</td>";
                 
                 table += "<td>";
-                table += teams.getYrBuilt();
+                    table += teams.getYrBuilt();
                 table += "</td>";
                 
                 table += "</tr>";
