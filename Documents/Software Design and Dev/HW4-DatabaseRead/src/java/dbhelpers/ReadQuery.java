@@ -60,8 +60,9 @@ public class ReadQuery {
     public String getHTMLTable(){
        
         String table = "";
+
         table += "<table>";
-        
+
         table += "<tr>";
             table += "<th>   </th>";
             table += "<th>Team Name</th>";
@@ -125,6 +126,7 @@ public class ReadQuery {
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
+
         table += "</table>";
         
            return table;
