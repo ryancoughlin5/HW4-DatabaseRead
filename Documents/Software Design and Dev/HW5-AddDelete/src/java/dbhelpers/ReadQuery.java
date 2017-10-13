@@ -120,6 +120,10 @@ public class ReadQuery {
                 table += "<td>";
                     table += teams.getYrBuilt();
                 table += "</td>";
+               
+                table += "<td>";
+                table += "<a href=delete?teamID=" + teams.getTeamID() + ">Delete</a>";
+                table += "</td>";
                 
                 table += "</tr>";
             }
