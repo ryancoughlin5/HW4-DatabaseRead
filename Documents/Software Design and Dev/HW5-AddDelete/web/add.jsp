@@ -10,9 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add a New Team</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'HW5style.css'/>
     </head>
-    <body>
+    <body id="add">
         <h1>Add a New Team</h1>
+        
         
         <form name="addForm" action="addTeam" method="get">
             

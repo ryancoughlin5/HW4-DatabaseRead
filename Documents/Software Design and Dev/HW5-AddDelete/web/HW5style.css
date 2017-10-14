@@ -1,0 +1,35 @@
+body{font-family: tahoma; background-color: #D2B48C;text-align: center;}
+h1{text-align: center; color: #F08080}
+a{color: black;}
+td{border-right: 3px solid white; padding-bottom: 6px; padding-right: 6px;}
+tr:nth-child(even) {background-color: #F08080; color: white}
+tr:nth-child(odd) {background-color: #D2B48C; color: black}
+tr:hover{background-color: #CCCCCC}
+table{width: 100%; border: 8px solid white; border-collapse: collapse}
+th{background-color: #FFFF99; color: black;}
+
+
+
+#add input[type=text]{    
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    background-color: #FFFF99; 
+    border: 1px solid #F08080;
+}
+
+#add input[type=text]:focus {
+    border: 3px solid #F08080;
+}
+
+#add  input[type=submit]{
+    background-color: #F08080;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
