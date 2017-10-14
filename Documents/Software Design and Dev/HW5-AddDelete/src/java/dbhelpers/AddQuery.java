@@ -55,20 +55,20 @@ public class AddQuery {
         }
     }
     
-    public void doAdd(Teams teams){
+    public void doAdd(Teams team){
         
         try {
-            String query = "INSERT INTO teams (teamName, conference, division, city, state, stadiumName, yrBuilt) VALUES (?,?,?,?,?,?,?)";
+            String query = "INSERT INTO mlb_teams (teamName, conference, division, city, state, stadiumName, yrBuilt) VALUES (?,?,?,?,?,?,?)";
             
             PreparedStatement ps = conn.prepareStatement(query);
             
-            ps.setString(1, teams.getTeamName());
-            ps.setString(2, teams.getConference());
-            ps.setString(3, teams.getDivision());
-            ps.setString(4, teams.getCity());
-            ps.setString(5, teams.getState());
-            ps.setString(6, teams.getStadiumName());
-            ps.setInt(7, teams.getYrBuilt());
+            ps.setString(1, team.getTeamName());
+            ps.setString(2, team.getConference());
+            ps.setString(3, team.getDivision());
+            ps.setString(4, team.getCity());
+            ps.setString(5, team.getState());
+            ps.setString(6, team.getStadiumName());
+            ps.setInt(7, team.getYrBuilt());
             
             ps.executeUpdate();
         } catch (SQLException ex) {

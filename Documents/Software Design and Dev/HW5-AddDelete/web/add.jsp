@@ -17,7 +17,7 @@
         <form name="addForm" action="addTeam" method="get">
             
             <label>Team Name:</label>
-            <input type="text" name="name" value=""/>
+            <input type="text" name="teamName" value=""/>
             <br>
             <label>Conference:</label>
             <input type="text" name="conference" value=""/>

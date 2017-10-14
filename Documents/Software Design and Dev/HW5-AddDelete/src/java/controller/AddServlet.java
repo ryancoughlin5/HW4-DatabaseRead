@@ -88,20 +88,20 @@ public class AddServlet extends HttpServlet {
             int yrBuilt = Integer.parseInt(request.getParameter("yrBuilt"));
             
             //set up a friend object
-            Teams teams = new Teams();
-            teams.setTeamName(teamName);
-            teams.setConference(conference);
-            teams.setDivision(division);
-            teams.setCity(city);
-            teams.setState(state);
-            teams.setStadiumName(stadiumName);
-            teams.setYrBuilt(yrBuilt);
+            Teams team = new Teams();
+            team.setTeamName(teamName);
+            team.setConference(conference);
+            team.setDivision(division);
+            team.setCity(city);
+            team.setState(state);
+            team.setStadiumName(stadiumName);
+            team.setYrBuilt(yrBuilt);
             
             //set up an addQuery object
             AddQuery aq = new AddQuery();
             
             //pass the friend to addQuery to add to the database
-            aq.doAdd(teams);
+            aq.doAdd(team);
             
             //pass the execution to the ReadServlet AKA "Read.java"
             String url = "/read";
