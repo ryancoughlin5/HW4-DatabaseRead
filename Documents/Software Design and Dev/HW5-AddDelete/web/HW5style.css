@@ -3,10 +3,10 @@ h1{text-align: center; color: #F08080}
 a{color: black;}
 td{border-right: 3px solid white; padding-bottom: 6px; padding-right: 6px;}
 tr:nth-child(even) {background-color: #F08080; color: white}
-tr:nth-child(odd) {background-color: #D2B48C; color: black}
+tr:nth-child(odd) {background-color: white; color: #696969;}
 tr:hover{background-color: #CCCCCC}
 table{width: 100%; border: 8px solid white; border-collapse: collapse}
-th{background-color: #FFFF99; color: black;}
+th{background-color: #FFFF99; color: #696969;}
 
 
 
