@@ -13,7 +13,7 @@ th{background-color: #FFFF99; color: #696969;}
 .add td {border: none; height: 25px; padding: 10px; font-weight: bold;}
 .update td {border: none; height: 25px; padding: 10px; font-weight: bold;}
 
-.wrap{text-align: center; width: 90%; margin: 0 auto; border: 1px solid black; margin-top: 25px; }
+.wrap{text-align: center; width: 90%; margin: 0 auto; border: 3px solid black; margin-top: 25px; }
 
 .header{text-align: left; padding:25px;}
 .headerImg{float:left; width: 200px;}
