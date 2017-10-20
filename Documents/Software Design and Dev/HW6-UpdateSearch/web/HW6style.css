@@ -17,40 +17,52 @@ th{background-color: #FFFF99; color: #696969;}
 
 .header{text-align: left; padding:25px;}
 .headerImg{float:left; width: 200px;}
-.headerText{float: left; height: 105px; padding-top: 50px; padding-left: 25px;}
+.headerText{float: center; height: 105px; padding-top: 50px;}
 
 .main{padding: 25px}
 .main h2{text-align: center; font-family: tahoma;color: #F08080;}
 
-/*Listmatic "Centred list navbar"
-http://css.maxdesign.com.au/listamatic/horizontal16.htm*/
-.navcontainer ul
+/*Listmatic "Central Horizontal Boxes"
+http://css.maxdesign.com.au/listamatic/horizontal31.htm*/
+
+.navcontainer
 {
-padding: .2em 0;
-margin: 0;
-list-style-type: none;
-background-color: #036;
-color: #FFF;
-width: 100%;
-font: normal 90% arial, helvetica, sans-serif;
-text-align: center;
+background-color: #F08080;
+border-top: solid 1px #696969;
+border-bottom: solid 1px #696969;
 }
 
-li { display: inline; }
-
-li a
+ul
 {
+font-family: tahoma;
+font-weight: bold;
+color: white;
+text-align: center;
+margin: 0;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+ul li
+{
+display: inline;
+margin-left: -4px;
+}
+
+ ul li a
+{
+padding: 5px 10px 5px 10px;
+color: white;
 text-decoration: none;
-background-color: #036;
-color: #FFF;
-padding: .2em 1em;
 border-right: 1px solid #fff;
 }
 
-li a:hover
+ ul li a:hover
 {
-background-color: #369;
-color: #fff;
+background-color: #696969;
+color: #F08080;
 }
 
-.footer{text-align: center; padding: 25px}
+.active a { border-left: 1px solid #fff; }
+
+.footer{text-align: center; background-color: #696969; color: #D2B48C; padding: 25px;}

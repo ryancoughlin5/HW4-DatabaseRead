@@ -21,13 +21,10 @@
 
         <div class="main"> 
             <h2>Major League Baseball Teams Database</h2><br>
-        
-            <a href="read">View All Teams</a><br><br>
-            <a href="search">Search Teams</a>
         </div>
         
             <%@include file="includes/footer.jsp"%><!--Footer-->>
-        
+
         </div> <!--close wrap div-->
     </body>
 </html>

@@ -13,7 +13,7 @@
         </div> 
 
         <div class="headerText">
-                <h1>Header Text</h1>
+                <h1>Software Design and Development HW6</h1>
         </div> 
 <br clear="all">
 </div> <!--close header-->

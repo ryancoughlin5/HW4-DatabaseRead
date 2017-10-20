@@ -7,11 +7,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
-<div id="navcontainer"> <!--Listmatic "Centred list navbar-->
+<div class="navcontainer">
     <ul class="navlist">
-    <li class="active"><a href="index.jsp" id="current">Home</a></li>
-    <li><a href="#">List All Records</a></li>
-    <li><a href="#">Add a New Record</a></li>
-    <li><a href="#">Search Records</a></li>
+        <li class="active"><a href="index">Home</a></li>
+        <li><a href="read">List Teams</a></li>
+        <li><a href="add">Add Team</a></li>
+        <li><a href="search">Search</a></li>
     </ul>
 </div>
