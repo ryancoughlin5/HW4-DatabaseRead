@@ -10,10 +10,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add a New Team</title>
-        <link rel = 'stylesheet' type = 'text/css' href = 'HW5style.css'/>
+        <link rel = 'stylesheet' type = 'text/css' href = 'HW6style.css'/>
     </head>
     <body id="add">
-        <h1>Add a New Team</h1>
+        
+        <div class="wrap"> <!--div to hold all other divs-->
+            
+            <%@include file="includes/header.jsp"%>
+            
+            <%@include file="includes/menu.jsp"%>
+
+        <div class="main"> 
+        <h2>Add a New Team</h2>
         
         
         <form name="addForm" action="addTeam" method="get">
@@ -41,5 +49,9 @@
             <br>
             <input type="submit" name="submit" value="Submit"/>
         </form>
+            
+         </div>
+        
+            <%@include file="includes/footer.jsp"%><!--Footer-->>
     </body>
 </html>
