@@ -77,52 +77,53 @@ public class ReadQuery {
         try {
             while(this.results.next()){
                 
-                Teams teams = new Teams();
-                teams.setTeamID(this.results.getInt("teamID"));
-                teams.setTeamName(this.results.getString("teamName"));
-                teams.setConference(this.results.getString("conference"));
-                teams.setDivision(this.results.getString("division"));
-                teams.setCity(this.results.getString("city"));
-                teams.setState(this.results.getString("state"));
-                teams.setStadiumName(this.results.getString("stadiumName"));
-                teams.setYrBuilt(this.results.getInt("yrBuilt"));
+                Teams team = new Teams();
+                team.setTeamID(this.results.getInt("teamID"));
+                team.setTeamName(this.results.getString("teamName"));
+                team.setConference(this.results.getString("conference"));
+                team.setDivision(this.results.getString("division"));
+                team.setCity(this.results.getString("city"));
+                team.setState(this.results.getString("state"));
+                team.setStadiumName(this.results.getString("stadiumName"));
+                team.setYrBuilt(this.results.getInt("yrBuilt"));
                 
                 
                 table += "<tr>";
                 table += "<td>";
-                    table += teams.getTeamID();
+                    table += team.getTeamID();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getTeamName();
+                    table += team.getTeamName();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getConference();
+                    table += team.getConference();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getDivision();
+                    table += team.getDivision();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getCity();
+                    table += team.getCity();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getState();
+                    table += team.getState();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getStadiumName();
+                    table += team.getStadiumName();
                 table += "</td>";
                 
                 table += "<td>";
-                    table += teams.getYrBuilt();
+                    table += team.getYrBuilt();
                 table += "</td>";
                
                 table += "<td>";
-                table += "<a href=delete?teamID=" + teams.getTeamID() + ">Delete</a>";
+                table += "<a href=update?teamID=" + team.getTeamID() + ">Update</a>";
+                table += "<a href=delete?teamID=" + team.getTeamID() + ">Delete</a>";
                 table += "</td>";
                 
                 table += "</tr>";
