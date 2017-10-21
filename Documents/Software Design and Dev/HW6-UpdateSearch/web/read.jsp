@@ -24,13 +24,15 @@
             
             <%@include file="includes/menu.jsp"%>
 
-            <div class="main">
-        
-        <h2>MLB Teams Table</h2>
+        <div class="main">
 
-        <%= table %>
+            <h2>MLB Teams Table</h2>
+            <div class="teams">
+            <%= table %>
+        </div>
         </div>
 
-            <%@include file="includes/footer.jsp"%><!--Footer-->>     
+            <%@include file="includes/footer.jsp"%><!--Footer-->
+        </div>
     </body>
 </html>

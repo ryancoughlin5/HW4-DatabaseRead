@@ -54,7 +54,7 @@ public class UpdateQuery {
     public void doUpdate(Teams team){
         
         try {
-            String query = "UPDATE teams SET teamID = ?, conference = ?, division = ?, city = ?, state = ?, stadiumName = ?, yrBuilt = ?";
+            String query = "UPDATE mlb_teams SET teamName = ?, conference = ?, division = ?, city = ?, state = ?, stadiumName = ?, yrBuilt = ?";
             
             PreparedStatement ps = conn.prepareStatement(query);
             

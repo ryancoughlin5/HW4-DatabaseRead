@@ -1,19 +1,21 @@
-body{font-family: tahoma; background-color: #D2B48C;}
+body{font-family: tahoma; background-color: #696969;}
 h1{text-align: center; color: #F08080}
 a{color: black;}
-td{border-right: 3px solid white; padding-bottom: 6px; padding-right: 6px;}
-tr:nth-child(even) {background-color: #F08080; color: white}
-tr:nth-child(odd) {background-color: white; color: #696969;}
-tr:hover{background-color: #CCCCCC}
-table{width: 100%; border: 8px solid white; border-collapse: collapse}
-th{background-color: #FFFF99; color: #696969;}
+
+.teams td{border-right: 3px solid white; padding-bottom: 6px; padding-right: 6px;}
+.teams tr:nth-child(even) {background-color: #F08080; color: white}
+.teams tr:nth-child(odd) {background-color: white; color: #696969;}
+.teams tr:hover{background-color: #CCCCCC}
+.teams table{width: 100%; border: 8px solid white; border-collapse: collapse}
+.teams th{background-color: #FFFF99; color: #696969;}
 
 
 .right{text-align: right;}
 .add td {border: none; height: 25px; padding: 10px; font-weight: bold;}
-.update td {border: none; height: 25px; padding: 10px; font-weight: bold;}
+.update td {margin: 0 auto auto; border: none; height: 25px; padding: 10px; font-weight: bold;}
+.update table {float: center;}
 
-.wrap{text-align: center; width: 90%; margin: 0 auto; border: 3px solid black; margin-top: 25px; }
+.wrap{background-color: #D2B48C; text-align: center; width: 90%; margin: 0 auto; border: 0px solid black; margin-top: 25px; }
 
 .header{text-align: left; padding:25px;}
 .headerImg{float:left; width: 200px;}

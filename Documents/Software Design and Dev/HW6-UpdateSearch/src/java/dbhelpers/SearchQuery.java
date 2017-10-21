@@ -63,10 +63,10 @@ public class SearchQuery {
     public void doSearch(String teamName){
      
         try {
-            String query = "SELECT * FROM teams WHERE teamName LIKE ?";
-            
+            String query = "SELECT * FROM mlb_teams WHERE UPPER(teamName) LIKE ?";
+
             PreparedStatement ps = conn.prepareStatement(query);
-            ps.setString(1, "%" + teamName + "%");
+            ps.setString(1, "%" + teamName.toUpperCase() + "%");
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
@@ -91,6 +91,13 @@ public class SearchQuery {
         table += "</tr>";
             
         try {
+            if(!this.results.isBeforeFirst()){
+                table += "<tr>";
+                    table += "<td colspan='6'> Sorry, no records matched your search</td>";
+                table += "<tr>";
+}
+            else{
+            
             while(this.results.next()){
                 
                 Teams team = new Teams();
@@ -143,14 +150,17 @@ public class SearchQuery {
                 table += "</td>";
                 
                 table += "</tr>";
+                }
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        catch (SQLException ex) {
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
+        }
+            
         table += "</table>";
         
            return table;
+            
     }
 }
 

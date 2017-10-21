@@ -18,12 +18,13 @@
         <h2>Search Teams</h2>
         
         <form name="searchForm" action="search" method="get">
-            <input type="text" name="searchval" value=""/><br>
-            <input type="submit" name="submit" value="Search"/>
+            <input type="text" name="searchval" value=""><br>
+            <input type="submit" name="submit" value="Search">
         </form>
             
              </div>
 
-            <%@include file="includes/footer.jsp"%><!--Footer-->>
+           <%@include file="includes/footer.jsp"%><!--Footer-->
+        </div>
     </body>
 </html>

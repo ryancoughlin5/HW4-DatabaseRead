@@ -79,7 +79,7 @@ public class UpdateServlet extends HttpServlet {
             throws ServletException, IOException {
         
             //get the form data and set up Team object
-            int teamID = Integer.parseInt(request.getParameter("teamId"));
+            int teamID = Integer.parseInt(request.getParameter("teamID"));
             String teamName = request.getParameter("teamName");
             String conference = request.getParameter("conference");
             String division = request.getParameter("division");

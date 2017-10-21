@@ -59,7 +59,7 @@ public class ReadRecord {
     
         try {
             //set up a string to hold our query
-            String query = "SELECT * FROM teams WHERE teamID = ?";
+            String query = "SELECT * FROM mlb_teams WHERE teamID = ?";
             
             //create a preparedstatement using our query string
             PreparedStatement ps = conn.prepareStatement(query);
@@ -69,7 +69,6 @@ public class ReadRecord {
             
             //exectue the query
             this.results = ps.executeQuery();
-            
             this.results.next();
             
             team.setTeamID(this.results.getInt("teamID"));

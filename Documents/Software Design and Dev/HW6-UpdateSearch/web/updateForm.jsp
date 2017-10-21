@@ -15,8 +15,10 @@
         <title>Update A Team</title>
     </head>
     <body>
-        <h1>Update A Team</h1>
         
+            <div class="wrap">
+            
+        <h1>Update A Team</h1>
         
         <form name="updateForm" action="updateTeam" method="get">
             <table class="update">
@@ -57,5 +59,6 @@
             <input type="reset" name="reset" value="Clear"/>
             <input type="submit" name="submit" value="Update"/>
         </form>
+            </div>
     </body>
 </html>

@@ -12,7 +12,7 @@
         <title>Add a New Team</title>
         <link rel = 'stylesheet' type = 'text/css' href = 'HW6style.css'/>
     </head>
-    <body id="add">
+    <body class="add">
         
         <div class="wrap"> <!--div to hold all other divs-->
             
@@ -52,6 +52,7 @@
             
          </div>
 
-            <%@include file="includes/footer.jsp"%><!--Footer-->>
+            <%@include file="includes/footer.jsp"%><!--Footer-->
+        </div>
     </body>
 </html>

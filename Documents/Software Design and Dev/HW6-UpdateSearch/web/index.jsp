@@ -23,7 +23,7 @@
             <h2>Major League Baseball Teams Database</h2><br>
         </div>
         
-            <%@include file="includes/footer.jsp"%><!--Footer-->>
+            <%@include file="includes/footer.jsp"%><!--Footer-->
 
         </div> <!--close wrap div-->
     </body>

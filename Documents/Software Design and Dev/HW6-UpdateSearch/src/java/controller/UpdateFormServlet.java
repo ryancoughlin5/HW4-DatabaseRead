@@ -88,7 +88,7 @@ public class UpdateFormServlet extends HttpServlet {
         rr.doRead();
         Teams team = rr.getTeams();
         
-        //pass team and control t updateForm.jsp
+        //pass team and control to updateForm.jsp
         request.setAttribute("team", team);
         
         String url = "/updateForm.jsp";
