@@ -54,7 +54,7 @@ public class UpdateQuery {
     public void doUpdate(Teams team){
         
         try {
-            String query = "UPDATE mlb_teams SET teamName = ?, conference = ?, division = ?, city = ?, state = ?, stadiumName = ?, yrBuilt = ?";
+            String query = "UPDATE mlb_teams SET teamName = ?, conference = ?, division = ?, city = ?, state = ?, stadiumName = ?, yrBuilt = ? WHERE teamID =?";
             
             PreparedStatement ps = conn.prepareStatement(query);
             
@@ -65,7 +65,8 @@ public class UpdateQuery {
             ps.setString(5, team.getState());
             ps.setString(6, team.getStadiumName());
             ps.setInt(7, team.getYrBuilt());
-            
+            ps.setInt(8, team.getTeamID());
+
             ps.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(UpdateQuery.class.getName()).log(Level.SEVERE, null, ex);

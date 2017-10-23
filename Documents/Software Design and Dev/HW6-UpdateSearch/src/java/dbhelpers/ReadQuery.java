@@ -123,6 +123,7 @@ public class ReadQuery {
                
                 table += "<td>";
                 table += "<a href=update?teamID=" + team.getTeamID() + ">Update</a>";
+                table += " ";
                 table += "<a href=delete?teamID=" + team.getTeamID() + ">Delete</a>";
                 table += "</td>";
                 
